@@ -1,19 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d04cfc0355.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Zadanie 1 - bootstrap</title>
+    <style>
+        .skill-icon {
+            font-size: 4rem;
+            color: #e44d26;
+        }
+        .skill-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .skill-title {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        .skills-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .skills-section h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .skills-section h2::after {
+            content: "";
+            width: 50px;
+            height: 2px;
+            background-color: #ddd;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 <body>
     <p>Zadanie 1 Bootstrap</p>
-<h2>My skils</h2>
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-css3-alt"></i>
-    <i class="fa-brands fa-js"></i>
-    <i class="fa-brands fa-react"></i>
-    <i class="fa-brands fa-git"></i>
-    <i class="fa-brands fa-wordpress"></i>
+<br>
+    <div class="container">
+        <div class="skills-section">
+            <h2>My skills</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <div class="skill-title">HTML5</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <div class="skill-title">CSS3</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-js-square skill-icon"></i>
+                <div class="skill-title">JavaScript</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-react skill-icon"></i>
+                <div class="skill-title">ReactJS</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <div class="skill-title">GIT</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 skill-item">
+                <i class="fab fa-wordpress skill-icon"></i>
+                <div class="skill-title">WordPress</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
