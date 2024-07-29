@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d04cfc0355.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Zadanie 2 - bootstrap</title>
 </head>
 <body>
-    <p>Zadanie 2</p>
+    <p>Zadanie 2 Bootstrap</p>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Kim jest Front End Developer?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione animi dolore voluptatem earum provident, reiciendis voluptatibus porro rerum? Aspernatur laudantium modi labore sint cupiditate nostrum facere itaque. Mollitia, illum voluptates?
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Od czego zaczyna się nauka?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ea velit ipsam officia enim, atque optio odit perferendis neque eos quisquam excepturi minus asperiores accusantium debitis, sit voluptatem voluptates nam.
+                       Eum laborum eaque quisquam voluptas mollitia molestias dignissimos veritatis similique veniam atque fugiat sint maiores, incidunt eos consectetur optio assumenda sit nesciunt dicta facere accusamus possimus alias quo. Omnis, at.
+                       Nemo animi maxime repellendus, nisi magnam laboriosam exercitationem eum ducimus laudantium natus, libero omnis fugiat doloribus perferendis sequi qui iure quaerat tempore, sit excepturi architecto minus? Obcaecati excepturi molestiae molestias.
+                       Asperiores voluptatum, dolores saepe enim ratione ipsam quas expedita eaque vero rem in laudantium culpa, molestiae pariatur provident facilis. Nam aspernatur fuga soluta sunt sapiente cum eligendi ab reiciendis necessitatibus.
+                       Blanditiis ullam dolorem, incidunt natus eos saepe modi? Tempora ipsam corrupti deleniti, esse tenetur laboriosam reiciendis obcaecati adipisci magni minima corporis fugiat reprehenderit repellendus? Voluptatem ex enim rem dolorem architecto.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Znam już podstawy, co dalej?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto odio ipsam voluptatem odit natus, illo aliquid totam optio nisi dolorum amet. Reprehenderit fugit atque tenetur labore molestias rem dolor!
+                        Asperiores dolore voluptate praesentium tempora doloribus porro dolorum expedita molestiae atque distinctio a voluptates dolorem sapiente quas natus maiores tenetur in recusandae, magni provident adipisci! Nesciunt fugit corporis architecto eos!
+                        Placeat eos beatae, pariatur, voluptates eveniet ad, voluptas ex dolores cupiditate nisi at eligendi! Minima, tempora? Cupiditate quidem incidunt accusamus ea ipsa quae, voluptatibus assumenda libero unde perspiciatis eum amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
